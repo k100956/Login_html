@@ -13,8 +13,8 @@ case RADIUS_ACCESS_ACCEPT:
 $uuid = shell_exec("sudo cat /home/nchc".$uname."/.elk_config | grep uuid |sed 's/uuid=//g'");
 session_start();
 $_SESSION['usid']=$uname;
-setcookie( 'redirect',1,time()+3600,NULL,NULL,NULL,TRUE);
-setcookie( 'uuid',$uuid,time()+3600,NULL,NULL,NULL,TRUE);
+setcookie( 'redirect',1,time()+32400,NULL,NULL,NULL,TRUE);
+setcookie( 'uuid',$uuid,time()+32400,NULL,NULL,NULL,TRUE);
 
   echo "<script>window.location.href = 'https://test1.nchc.org.tw'</script>";
    exit;
