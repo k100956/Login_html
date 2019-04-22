@@ -10,7 +10,7 @@
 <link href="/unauthenticated/css/login.min.css" rel="stylesheet" type="text/css">
 <script src="/unauthenticated/js/login.min.js" type="text/javascript"></script>
 </head>
-<body>
+<body  oncontextmenu="return false">
 <?php include 'searchcookie.php'; ?>
 <div class="container">
 <form method="post" target="_top" action="login.php" class="form-signin clearfix" role="form">
